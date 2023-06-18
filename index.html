@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF -8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b9ee4672f7.js" crossorigin="anonymous"></script>
+
+    </head>
+<body>
+<div id="header">
+
+    <div class="container">
+        <nav>
+
+            <img src="images/Arthur Logo.png" class="logo">
+
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+           
+            </ul>
+
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+            
+        <div class="header-text">
+            <p>SQL & Applications Specialist</p>
+            <h1>Hi, I'm <span>Arthur</span><br>an IT Specialist</h1>
+        </div>
+    </div>
+    
+</div>
+<!-----------about---------->
+<div id="About">
+    <div class="container">
+        <div class ="row">
+            <div class="about-col-1">
+                    <img src="images/Facebook.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Experienced IT professional with database administration skills across both MS SQL and Oracle. Having the ability to take the technical lead in projects and supporting technical implementation whilst working on multiple projects.
+
+                    Currently managing company CRM, Grants system, SharePoint site.
+                    Developing Power Bi Reports and SSRS reports within the company.
+                    Currently I am the Admin for the Salesforce CRM within the company. Previously I managed the Lexis Nexis CRM.
+                    <br>
+                    <br>Please see my progress in Salesforce for with trailblaze journey : <a href ="https://trailblazer.me/id/artoev95">https://trailblazer.me/id/artoev95</p></a>
+            
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div>
+                        <div class="tab-contents active-tab" id="skills">
+
+                            <ul>
+                                <li><span>SQL</span><br>Develop scripts SQL scripts and manage databases</li>
+                                <li><span>Salesforce</span><br>Administration of Salesforce within the organization </li>
+                                <li><span>Data Analytics</span><br>Design and Consult visuals with Power Bi</li>
+                                <li><span>SharePoint</span><br>Maintain SharePoint site and Administer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+
+                            <ul>
+                                <li><span>2019 - Current</span><br>Applications/SQL Developer at IDA Ireland</li>
+                                <li><span>2017 - 2019</span><br>Junior Database Administer at Enterprise Ireland</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+
+                            <ul>
+                                <li><span>2013-2017</span><br>Bachelor's Degree in Information Technology at Waterford Institute of Technology</li>
+                                <li><span>2015-2016</span><br>Erasmus Programme in Computer science at Czech University of Life Sciences Prague</li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+</div>
+
+<!----------Services------------>
+
+<div id="services">
+    <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>SQL</h2>
+            <p>Managing and maintaining the grants system within the organization. This involves front end user queries and back-end SQL database tasks which would involve regularly running SQL scripts to make updates to the system and provide ad-hoc reports from the database to users.</p>
+            <a href="#">Learn more</a>
+        </div>
+
+        <div>
+            <i class="fa-brands fa-salesforce"></i>
+            <h2>Salesforce Administration</h2>
+            <p>My usual tasks include user and license management, resolving support tickets, gathering requirements from users and stakeholders, supporting team members, providing training, and maintaining Salesforce environment.</p>
+            <a href="#">Learn more</a>
+        </div>
+
+        <div>
+            <i class="fa-brands fa-windows"></i>
+            <h2>System Implementation/Business Analysis</h2>
+            <p>I sit down with the users, try to understand the requirements/problems and try to find out the best solution for their query. This would involved finding ways to make processes more efficient/quicker, looking for ad-hoc solutions that I can script up and suggestioning how to use a system better.</p>
+            <a href="#">Learn more</a>
+        </div>
+    </div>
+
+    </div>
+
+</div>
+
+<!-------Porfolio---------->
+<div id="portfolio">
+
+    <div class="container">
+
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="images/Power Bi.jpg">
+                <div class="layer">
+                    <h3>Power Bi Project at IDA Ireland</h3>
+                    <p>Deployment of Power Bi for the first time in the organization. Created very intuitive dashboards with complex visuals and metrics. This dashboard helped the company see how they were doing. </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/salesforce2.jpg">
+                <div class="layer">
+                    <h3>Salesforce deployment at IDA Ireland</h3>
+                    <p>My current company took the digital transformation path from an old CRM to a new advanced CRM, Salesforce. I was heavily involved in this project. My main tasks were configuring and testing MFA, SSO and profiles. Setting up users, providing them help with accessing the platform. Importing users into assignment tables, making sure users are assigned to the right queues. Also this CRM is linked to another system which runs of SQL, I had to create link tables and look up tables to connect the two separate systems.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/sql.png">
+                <div class="layer">
+                    <h3>SQL work at Enterprise Ireland</h3>
+                    <p>Back in 2018 with the new GPDR rules, I took initiative and captured all the data that was not being used by the company in the database, into separate temporary table and reported back to the managers with new information.
+                        This involved retrieving data from system tables and analysing the data to see which tables have not being accessed/data changed in long period.  </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!--------Contact---------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fas fa-paper-plane"></i>arthovs94@hotmil.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>+353871185514</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/arthur-hovsepyan-0b7ab285/"><i class="fa-brands fa-linkedin-in"></i></a> 
+                <a href="https://wa.me/+353871185514"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://t.me/+353871185514"><i class="fa-brands fa-telegram"></i></a>
+
+            </div>
+
+            </div>
+           
+            <div class="contact-right">
+                <form name="submit-to-google-sheet"> 
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+</div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright @ Arthur Hovsepyan</p>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+    function opentab(tabname)
+    {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+
+    }
+
+
+</script>
+
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwKdiYnFutxwiZDTrlCVvFgOngAKTGKL0rVt1M_QsZVqDXow46NPG1S1xbmXWVSy-wM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+</body>
+
+
+
+</html>
